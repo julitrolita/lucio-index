@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuarios</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .table-container {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #555;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e0e0e0;
+            color: #333;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+        
+        tr:hover {
+            background-color: #e6e6e6;
+        }
+
+        table th:first-child { border-top-left-radius: 10px; }
+        table th:last-child { border-top-right-radius: 10px; }
+        table tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+        table tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #666;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            margin-top: 30px;
+        }
+
+        .submit-btn:hover {
+            background-color: #444;
+        }
+
+        .back-link {
+            margin-top: 30px;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <h1>👥 Listado de Usuarios Registrados</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Usuario</th>
+                    <th>Email (Ficticio)</th>
+                    <th>Rol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>johndoe</td>
+                    <td>john@ejemplo.com</td>
+                    <td>Administrador</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>alice_dev</td>
+                    <td>alice@ejemplo.com</td>
+                    <td>Desarrollador</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>peter_user</td>
+                    <td>peter@ejemplo.com</td>
+                    <td>Usuario Estándar</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>sarah_tester</td>
+                    <td>sarah@ejemplo.com</td>
+                    <td>Tester</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <button type="submit" class="submit-btn">Refrescar Lista</button>
+        </form>
+    </div>
+    <a href="index.html" class="back-link">← Volver al Menú Principal</a>
+</body>
+</html>
