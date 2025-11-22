@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas Preferidas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .table-container {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #555;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate; /* Permite border-radius */
+            border-spacing: 0;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e0e0e0; /* Encabezado gris */
+            color: #333;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7f7f7; /* Rayas sutiles */
+        }
+        
+        tr:hover {
+            background-color: #e6e6e6;
+        }
+
+        table th:first-child { border-top-left-radius: 10px; }
+        table th:last-child { border-top-right-radius: 10px; }
+        table tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+        table tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #666;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            margin-top: 30px;
+        }
+
+        .submit-btn:hover {
+            background-color: #444;
+        }
+
+        .back-link {
+            margin-top: 30px;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <h1>🍽️ Tabla de Comidas Preferidas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Comida</th>
+                    <th>Categoría</th>
+                    <th>Nivel de Preferencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pizza</td>
+                    <td>Italiana</td>
+                    <td>Máximo</td>
+                </tr>
+                <tr>
+                    <td>Sushi</td>
+                    <td>Japonesa</td>
+                    <td>Alto</td>
+                </tr>
+                <tr>
+                    <td>Tacos</td>
+                    <td>Mexicana</td>
+                    <td>Medio</td>
+                </tr>
+                <tr>
+                    <td>Hamburguesa</td>
+                    <td>Rápida</td>
+                    <td>Alto</td>
+                </tr>
+                <tr>
+                    <td>Ensalada César</td>
+                    <td>Saludable</td>
+                    <td>Bajo</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <button type="submit" class="submit-btn">Guardar Preferencias</button>
+        </form>
+    </div>
+    <a href="index.html" class="back-link">← Volver al Menú Principal</a>
+</body>
+</html>
